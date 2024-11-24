@@ -9,7 +9,7 @@ React Hooksのチートシート
 ### 状態のフック
 
 - [useState](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usestate-sample)
-- useReducer
+- [useReducer](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usereducer-sample)
 
 ### Contextのためのフック
 
