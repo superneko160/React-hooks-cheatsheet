@@ -1,0 +1,10 @@
+{
+  "name": "react-hooks-cheatsheet",
+  "scripts": {
+    "lint": "npx @biomejs/biome lint .",
+    "format": "npx @biomejs/biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}
