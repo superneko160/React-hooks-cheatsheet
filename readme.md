@@ -11,9 +11,9 @@ React Hooksのチートシート
 - [useState](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usestate-sample)
 - [useReducer](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usereducer-sample)
 
-### Contextのためのフック
+### コンテキストのためのフック
 
-- useContext
+- [useContext](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usecontext-sample)
 
 ### Refのフック
 - useRef
