@@ -21,7 +21,7 @@ React Hooksのチートシート
 
 ### 副作用のフック
 
-- useEffect
+- [useEffect](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/useeffect-sample)
 - useLayoutEffect
 
 ### メモ化のフック
