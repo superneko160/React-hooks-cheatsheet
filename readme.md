@@ -17,7 +17,7 @@ React Hooksのチートシート
 
 ### Refのフック
 - [useRef](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/useref-sample)
-- useImperativeHandle
+- [useImperativeHandle](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/useimperativehandle-sample)
 
 ### 副作用のフック
 
@@ -35,7 +35,7 @@ React Hooksのチートシート
 
 ```bash
 cd project-name
-npm run start
+npm start
 ```
 
 ### Lint
