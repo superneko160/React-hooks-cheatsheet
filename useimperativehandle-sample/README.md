@@ -24,7 +24,9 @@ export const Child = forwardRef((props, ref) => {
     },
   }))
 
-  return <div>{message !== null ? <p>{message}</p> : null}</div>
+  return (
+    {/* ... */}
+  )
 })
 ```
 
@@ -47,13 +49,13 @@ export const Parent = () => {
   }
 
   return (
-    // ...
+    {/* ... */}
   )
 }
 ```
 
 ## 概要
 
-`useImperativeHandle`を利用することで子が持つデータを参照したり、子で定義されている関数を呼び出せる。  
-具体的には、子が`useImperativeHandle`して公開した関数を、refを通じて親が利用する。  
+`useImperativeHandle`を利用することで子が持つデータを参照したり、子で定義されているメソッドを呼び出せる。  
+具体的には、子が`useImperativeHandle`して公開したメソッドを`ref`を通じて親が利用する。  
 親コンポーネントが子コンポーネントに依存するため、頻繁には利用されない。多くのケースでは`props`で代用できる。
