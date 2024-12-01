@@ -22,11 +22,12 @@ function App() {
    */
   const isEven1 = useMemo(() => {
     let i = 0
-    while (i < 500000000) {  // 重い処理
+    while (i < 500000000) {
+      // 重い処理
       i++
     }
     return count1 % 2 === 0
-  }, [count1])  // count1が変更されたときだけisEven1を実行
+  }, [count1]) // count1が変更されたときだけisEven1を実行
 
   const isEven2 = () => {
     return count2 % 2 === 0

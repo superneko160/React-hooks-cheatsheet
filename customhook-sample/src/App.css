@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+nav ul li {
+  margin: 0 3px;
+}
