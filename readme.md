@@ -26,8 +26,8 @@ React Hooksのチートシート
 
 ### メモ化のフック
 
-- useCallback
-- useMemo
+- [useCallback](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usecallback-sample)
+- [useMemo](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usememo-sample)
 
 ## Usage
 
