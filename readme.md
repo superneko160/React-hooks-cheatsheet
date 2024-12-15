@@ -39,7 +39,16 @@ React Hooksのチートシート
 
 ```bash
 cd project-name
+```
+
+```bash
 npm start
+```
+
+#### Use Vite Project
+
+```bash
+npm run dev
 ```
 
 ### Lint
