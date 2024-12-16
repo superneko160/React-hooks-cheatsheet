@@ -26,3 +26,9 @@ onClick={() => setCount(count - 1)}
 ```ts
 onClick={() => setCount(prevCount => prevCount + 1)}
 ```
+
+## 補足
+
+`useState`で単一の値ではなく、オブジェクトを扱う場合
+
+- [useStateでオブジェクトを管理する場合](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usestate-sample2)
