@@ -10,8 +10,8 @@ export const Parent = () => {
 
   return (
     // UserContextに値を渡す
-    <UserContext.Provider value={user}>
+    <UserContext value={user}>
       <Child />
-    </UserContext.Provider>
+    </UserContext>
   )
 }
