@@ -1,4 +1,4 @@
-# useOptimistic(with useTransition())
+# useOptimistic
 
 `useOptimistic`はユーザ操作に対する反応をより速く見せるための楽観的UI更新を実装するために使用されるフック。従来のデータ更新では、サーバーレスポンスを待ってから画面を更新するが、`useOptimistic`はユーザー操作が成功すると「楽観的に」仮定して、即座にUIを更新する。
 
