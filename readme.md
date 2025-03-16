@@ -29,6 +29,10 @@ React Hooksのチートシート
 - [useCallback](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usecallback-sample)
 - [useMemo](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usememo-sample)
 
+### 楽観的UIのフック
+
+- [useOptimistic](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/useoptimistic-sample)
+
 ### カスタムフック
 
 - [CustomHook](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/customhook-sample)
