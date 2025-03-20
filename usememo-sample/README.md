@@ -3,7 +3,7 @@
 計算結果（値）をメモ化するためのフック。複雑な計算の結果を保持し、不必要な再計算を防ぐ最適化手法
 
 > [!CAUTION]
-> React19からはコンパイラ（React Compoiler）による自動最適化により、`useMemo`や`useCallback`によるメモ化が不要となった
+> React19からはコンパイラ（React Compoiler）による自動最適化により、`useMemo`や`useCallback`によるメモ化が不要となった。
 > メモ化はコードの複雑化を招くため、React19以降であれば基本的には使用しない
 
 ## 構文
