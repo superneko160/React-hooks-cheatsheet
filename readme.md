@@ -32,7 +32,7 @@ React Hooksのチートシート
 ### 並行処理のフック
 
 - [useTransition](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usetransition-sample)
-- [useDeferredValue]()
+- [useDeferredValue](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/usedeferredvalue-sample)
 
 ### 楽観的UIのフック
 
