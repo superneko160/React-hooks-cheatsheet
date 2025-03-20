@@ -1,36 +1,24 @@
-import { useState, useDeferredValue, useMemo } from 'react'
+import { useState, useDeferredValue } from 'react'
 
 const Search = () => {
   const [query, setQuery] = useState('')
   const deferredQuery = useDeferredValue(query)
 
   // 大量のダミーデータを生成
-  const allItems = useMemo(() => {
-    const items = []
-    for (let i = 1; i <= 5000; i++) {
-      items.push({
-        id: i,
-        name: `アイテム ${i}`,
-        description: `これはアイテム ${i}の説明です 。${i % 10 === 0 ? '重要な' : '通常の'}アイテムです。`,
-      })
-    }
-    return items
-  }, [])
+  const allItems = Array.from({ length: 5000 }, (_, i) => ({
+    id: i + 1,
+    name: `アイテム ${i + 1}`,
+    description: `これはアイテム ${i + 1}の説明です 。${(i + 1) % 10 === 0 ? '重要な' : '通常の'}アイテムです。`,
+  }))
 
   // 検索結果をフィルター（重い処理）
-  const filteredItems = useMemo(() => {
-    console.log(`フィルタリング中... クエリ: "${deferredQuery}"`)
-
-    if (!deferredQuery.trim()) {
-      return []
-    }
-
-    return allItems.filter(
-      item =>
-        item.name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
-        item.description.toLowerCase().includes(deferredQuery.toLowerCase()),
-    )
-  }, [deferredQuery, allItems])
+  const filteredItems = !deferredQuery.trim()
+    ? []
+    : allItems.filter(
+        item =>
+          item.name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
+          item.description.toLowerCase().includes(deferredQuery.toLowerCase()),
+      )
 
   // 検索クエリとdeferredQueryが異なる場合、ロード中
   const isStale = query !== deferredQuery

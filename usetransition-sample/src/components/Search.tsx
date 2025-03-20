@@ -1,4 +1,4 @@
-import React, { useState, useTransition, useMemo } from 'react'
+import React, { useState, useTransition } from 'react'
 import type { Item } from '../types'
 
 const Search = () => {
@@ -7,17 +7,11 @@ const Search = () => {
   const [isPending, startTransition] = useTransition()
 
   // 大量のダミーデータを生成
-  const allData = useMemo(() => {
-    const data = []
-    for (let i = 1; i <= 5000; i++) {
-      data.push({
-        id: i,
-        name: `アイテム ${i}`,
-        description: `これはアイテム ${i} の説明です。${i % 10 === 0 ? '特別な' : '通常の'}アイテムです。`,
-      })
-    }
-    return data
-  }, [])
+  const allData = Array.from({ length: 5000 }, (_, i) => ({
+    id: i + 1,
+    name: `アイテム ${i + 1}`,
+    description: `これはアイテム ${i + 1} の説明です。${(i + 1) % 10 === 0 ? '特別な' : '通常の'}アイテムです。`,
+  }))
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     // 入力値の更新は即時に
