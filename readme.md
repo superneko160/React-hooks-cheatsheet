@@ -46,6 +46,10 @@ React Hooksのチートシート
 
 - [CustomHook](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/customhook-sample)
 
+### use API
+
+- [use](https://github.com/superneko160/React-hooks-cheatsheet/tree/main/use-sample)
+
 ## Usage
 
 ### Run
